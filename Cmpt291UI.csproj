@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBCD64D6-43BA-4292-9440-DCC874F524F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cmpt291UI</RootNamespace>
+    <AssemblyName>Cmpt291UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRemoveCustomer.Designer.cs">
+      <DependentUpon>AddRemoveCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCustomer.Designer.cs">
+      <DependentUpon>AddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEmployee.Designer.cs">
+      <DependentUpon>AddNewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRemoveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRemoveEmployee.Designer.cs">
+      <DependentUpon>AddRemoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRemoveVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRemoveVehicle.Designer.cs">
+      <DependentUpon>AddRemoveVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSignUpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSignUpWindow.Designer.cs">
+      <DependentUpon>CustomerSignUpWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerWindowMainBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerWindowMainBook.Designer.cs">
+      <DependentUpon>CustomerWindowMainBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomReports.Designer.cs">
+      <DependentUpon>CustomReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCustomer.Designer.cs">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEmployee.Designer.cs">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMainWindowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMainWindowBook.Designer.cs">
+      <DependentUpon>EmployeeMainWindowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindCustomerInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCustomerInformation.Designer.cs">
+      <DependentUpon>FindCustomerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindCustomerSmallWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCustomerSmallWindow.Designer.cs">
+      <DependentUpon>FindCustomerSmallWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptList.Designer.cs">
+      <DependentUpon>ReceiptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalTransactionWindowAddRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalTransactionWindowAddRemove.Designer.cs">
+      <DependentUpon>RentalTransactionWindowAddRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionPaymentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionPaymentWindow.Designer.cs">
+      <DependentUpon>TransactionPaymentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionsReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsReceipt.Designer.cs">
+      <DependentUpon>TransactionsReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreenCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreenCustomer.Designer.cs">
+      <DependentUpon>WelcomeScreenCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreenEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreenEmployee.Designer.cs">
+      <DependentUpon>WelcomeScreenEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddRemoveCustomer.resx">
+      <DependentUpon>AddRemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewCustomer.resx">
+      <DependentUpon>AddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewEmployee.resx">
+      <DependentUpon>AddNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRemoveEmployee.resx">
+      <DependentUpon>AddRemoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRemoveVehicle.resx">
+      <DependentUpon>AddRemoveVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSignUpWindow.resx">
+      <DependentUpon>CustomerSignUpWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerWindowMainBook.resx">
+      <DependentUpon>CustomerWindowMainBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomReports.resx">
+      <DependentUpon>CustomReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCustomer.resx">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEmployee.resx">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMainWindowBook.resx">
+      <DependentUpon>EmployeeMainWindowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCustomerInformation.resx">
+      <DependentUpon>FindCustomerInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCustomerSmallWindow.resx">
+      <DependentUpon>FindCustomerSmallWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptList.resx">
+      <DependentUpon>ReceiptList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalTransactionWindowAddRemove.resx">
+      <DependentUpon>RentalTransactionWindowAddRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionPaymentWindow.resx">
+      <DependentUpon>TransactionPaymentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionsReceipt.resx">
+      <DependentUpon>TransactionsReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreenCustomer.resx">
+      <DependentUpon>WelcomeScreenCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreenEmployee.resx">
+      <DependentUpon>WelcomeScreenEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
